@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     imgsAboutSection[slideIndex - 1].classList.remove('hidden')
-    imgsAboutSection[slideIndex - 1].classList.add('show-img')
+    imgsAboutSection[slideIndex - 1].classList.add('show-img', 'fade')
   }
 
   showImg(slideIndex)

@@ -87,6 +87,7 @@ h2 {
 
 .title-name {
   font-weight: 800;
+  margin: 0;
 }
 
 .title-description > p {
@@ -138,15 +139,6 @@ h2 {
     text-shadow: 1px 1px 2px black;
   }
 
-  h2 {
-    color: #e2d8a5;
-    font-family: Jost;
-    font-size: 0.5em;
-    font-weight: 600;
-    text-align: center;
-    text-shadow: 2px 2px 4px black;
-  }
-
   .title-description {
     color: #ffbd9b;
     text-shadow: 2px 2px 4px black;
@@ -182,6 +174,27 @@ h2 {
 /* header end */
 
 /* about start */
+#about{
+  margin-top: 30px;
+}
+.subtitle-about{
+  text-align: center;
+  color: #e2d8a5;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+}
+
+.description-about{
+  font-size: .6em;
+}
+
+.flex-container-about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .carousel {
   display: flex;
   align-items: center;
@@ -193,7 +206,7 @@ h2 {
 }
 
 .show-img {
-  width: 100%;
+  width: 90%;
   height: auto;
 }
 
@@ -211,8 +224,23 @@ button.next {
 
 button.prev {
   left: 0;
+  transform: translateX(100%);
 }
 button.next {
   right: 0;
+  transform: translateX(-100%);
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* about end */
