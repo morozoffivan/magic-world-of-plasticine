@@ -1,11 +1,13 @@
 body {
   box-sizing: border-box;
+  font-size: 55px;
+  margin: 0;
 }
 
 /* header start */
 
 .container {
-  margin: 0 200px;
+  margin: 0 10%;
 }
 
 #navbar > li > a {
@@ -23,26 +25,142 @@ body {
   gap: 60px;
 }
 
-.logo-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 #logo {
   width: 50px;
 }
 
-.title-logo{
-    font-family: "Amatic SC", sans-serif;
+.title-logo {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.title-container {
+  background-image: url(../assets/img/header/background_header.png);
+  background-size: cover;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff7d1;
+  font-family: Jost;
+  font-size: 0.6em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+  color: #e2d8a5;
+  font-family: Jost;
+  font-size: 0.6em;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.title-description {
+  color: #FFD09B;
+  text-shadow: 2px 2px 4px black;
+  font-family: Jost;
+  font-size: 0.6em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.title-name{
+  font-weight: 800;
+}
+
+.title-description>p{
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff7d1;
+    font-family: Jost;
+    font-size: 1em;
     font-weight: 700;
-    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  h2 {
+    color: #e2d8a5;
+    font-family: Jost;
+    font-size: 1em;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  .title-description {
+    color: #FFBD9B;
+    text-shadow: 2px 2px 4px black;
+    font-family: Jost;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff7d1;
+    font-family: Jost;
+    font-size: 0.5em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+  }
+  
+  h2 {
+    color: #e2d8a5;
+    font-family: Jost;
+    font-size: 0.5em;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 2px 2px 4px black;
+  }
+  
+  .title-description {
+    color: #FFBD9B;
+    text-shadow: 2px 2px 4px black;
+    font-family: Jost;
+    font-size: 0.5em;
+    font-weight: 500;
+    text-align: center;
+  }
 }
 
 /* style navbar toggler depends of monitor */
 .show-nav {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
